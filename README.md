@@ -1,81 +1,82 @@
 # Markdown Helper - VS Code Extension
 
-Welcome to the **Markdown Helper** VS Code extension! This tool is designed to enhance your markdown editing experience in Visual Studio Code with various utilities and helper functions, making markdown creation faster and more intuitive.
+欢迎使用 **Markdown Helper** 扩展，这是专为提升您在 Visual Studio Code 中的 Markdown 编辑体验而设计的工具！该扩展提供多种便捷功能，让 Markdown 编辑更快捷、直观。
 
-## Features
+[下载 Markdown Helper 插件](https://marketplace.visualstudio.com/items?itemName=xiaomingx.markdown-helper-xiaomingx)
 
-The Markdown Helper extension provides the following features:
+## 功能特色
 
-- **Table of Contents Generator**: Automatically generate a table of contents for your markdown documents.
-- **Link Validator**: Check for broken or invalid links within your markdown files.
-- **Preview Enhancements**: See live previews for embedded images, links, and custom markdown components.
-- **Quick Snippets**: Access frequently used markdown snippets for headers, lists, tables, and code blocks.
+Markdown Helper 提供以下核心功能：
 
-### Example of Features in Action
+- **目录生成器**：一键生成 Markdown 文档的目录，提升文档结构清晰度。
+- **链接校验器**：自动检查 Markdown 文件中的失效或无效链接，避免链接错误。
+- **预览增强**：实时预览嵌入的图片、链接和自定义 Markdown 组件，使文档可视化更便捷。
+- **快速代码片段**：提供常用的 Markdown 片段（如标题、列表、表格、代码块）以加速编辑。
 
-Below are screenshots showcasing some key features:
+### 功能展示示例
 
-\!\[Table of Contents Generator\]\(images/toc-generator.png\)  
-\!\[Link Validator\]\(images/link-validator.png\)
+以下是部分功能的截图展示：
 
-> Tip: Animations can be a great way to show off your extension. Consider creating short animations to highlight each feature.
+![目录生成器](images/toc-generator.png)  
+![链接校验器](images/link-validator.png)
 
-## Requirements
+> 提示：通过短动画展示各个功能有助于直观了解插件的用途。
 
-To get the most out of Markdown Helper, please ensure that you have:
+## 使用要求
 
-- **Visual Studio Code** version 1.60 or higher
-- Any additional dependencies or extensions listed below:
-    - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) for complementary markdown support.
+确保您已满足以下要求以获得最佳体验：
 
-## Extension Settings
+- **Visual Studio Code** 版本 1.60 或更高版本
+- 推荐的补充扩展：[Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) 提供更丰富的 Markdown 支持
 
-This extension adds the following settings to VS Code:
+## 扩展设置
 
-* `markdownHelper.enable`: Enable or disable Markdown Helper.
-* `markdownHelper.validateLinksOnSave`: Enable link validation automatically on file save.
-* `markdownHelper.toc.depth`: Set the depth level for table of contents generation.
+安装后，您可以配置以下设置来自定义 Markdown Helper：
 
-These settings can be configured in your VS Code `settings.json` file or directly in the Settings UI.
+* `markdownHelper.enable`：启用或禁用 Markdown Helper。
+* `markdownHelper.validateLinksOnSave`：在保存文件时自动进行链接验证，确保文件内的链接有效。
+* `markdownHelper.toc.depth`：设置目录生成的层级深度，满足不同文档结构需求。
 
-## Known Issues
+这些设置可在 VS Code 的 `settings.json` 文件或设置 UI 中进行调整。
 
-We are actively working to improve Markdown Helper. Current known issues include:
+## 已知问题
 
-- **Link Validator Performance**: Large files may slow down the link validation process.
-- **Image Preview Scaling**: Images may not render correctly on very high-resolution screens.
+我们正致力于不断改进 Markdown Helper，当前已知问题包括：
 
-If you encounter any issues, please report them in the [GitHub issues section](https://github.com/your-repo/markdown-helper/issues) for this extension.
+- **链接校验性能**：对于较大文件，链接校验功能可能会稍显缓慢。
+- **图片预览缩放**：在高分辨率屏幕上，图片可能无法按预期缩放显示。
 
-## Release Notes
+如果您遇到问题或有改进建议，欢迎前往 [GitHub 问题区](https://github.com/XiaomingX/markdown-helper/issues) 提交反馈。
 
-Stay updated with the latest features and fixes:
+## 更新记录
+
+关注最新的功能和修复：
 
 ### 1.0.0
 
-- Initial release of Markdown Helper with core features: TOC Generator, Link Validator, and Quick Snippets.
+- Markdown Helper 初始发布版本，包含目录生成器、链接校验器和快速代码片段功能。
 
 ### 1.1.0
 
-- Added customizable TOC depth and automatic link validation on save.
+- 新增目录深度自定义及自动链接验证功能。
 
 ---
 
-## Extension Guidelines
+## 扩展开发指南
 
-We follow the [VS Code Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines) to ensure a high-quality experience for our users.
+我们严格遵循 [VS Code 扩展开发指南](https://code.visualstudio.com/api/references/extension-guidelines)，以确保一致性和高质量的用户体验。
 
-## Working with Markdown in VS Code
+## 在 VS Code 中使用 Markdown
 
-VS Code provides excellent support for markdown files, including live previews and syntax highlighting. Use these shortcuts to enhance your workflow:
+VS Code 为 Markdown 提供了丰富的支持，包括实时预览和语法高亮。以下快捷键可进一步提升您的 Markdown 编辑效率：
 
-* **Split the Editor**: (`Cmd+\` on macOS or `Ctrl+\` on Windows/Linux).
-* **Toggle Preview**: (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows/Linux).
-* **Snippet Suggestions**: Press `Ctrl+Space` to access markdown snippets.
+* **分屏编辑**： (`Cmd+\` 在 macOS 上，`Ctrl+\` 在 Windows/Linux 上)
+* **切换预览**： (`Shift+Cmd+V` 在 macOS 上，`Shift+Ctrl+V` 在 Windows/Linux 上)
+* **代码片段建议**：按 `Ctrl+Space` 访问 Markdown 片段
 
-For more information:
+如需更多信息：
 
-- [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-- [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+- [Visual Studio Code 的 Markdown 支持](http://code.visualstudio.com/docs/languages/markdown)
+- [Markdown 语法参考](https://help.github.com/articles/markdown-basics/)
 
-**Enjoy your enhanced markdown editing experience!**
+**享受 Markdown Helper 提供的高效编辑体验吧！**

@@ -1,30 +1,54 @@
 {
-  "name": "markdown-helper",
-  "displayName": "markdown-helper",
-  "description": "",
+  "name": "markdown-helper-xiaomingx",
+  "displayName": "Markdown Helper Pro X",
+  "description": "一个强大的 Markdown 编辑和格式化工具 - By XiaomingX",
   "version": "0.0.1",
+  "publisher": "xiaomingx",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/XiaomingX/markdown-helper.git"
+  },
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#007ACC",
+    "theme": "dark"
+  },
+  "pricing": "Free",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/XiaomingX/markdown-helper/issues"
+  },
+  "homepage": "https://github.com/XiaomingX/markdown-helper#readme",
+  "keywords": [
+    "markdown",
+    "formatter",
+    "productivity"
+  ],
   "engines": {
     "vscode": "^1.95.0"
   },
   "categories": [
-    "Other"
+    "Other",
+    "Formatters"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onCommand:markdown-helper-xiaomingx.formatText"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
-        {
-            "command": "markdown-helper.formatText",
-            "title": "Format Markdown Text"
-        }
+      {
+        "command": "markdown-helper-xiaomingx.formatText",
+        "title": "Format Markdown Text"
+      }
     ],
     "keybindings": [
-        {
-            "command": "markdown-helper.formatText",
-            "key": "ctrl+m",
-            "mac": "cmd+m",
-            "when": "editorTextFocus"
-        }
+      {
+        "command": "markdown-helper-xiaomingx.formatText",
+        "key": "ctrl+m",
+        "mac": "cmd+m",
+        "when": "editorTextFocus"
+      }
     ]
   },
   "scripts": {
